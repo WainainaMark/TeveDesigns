@@ -1,14 +1,105 @@
-:root{
-    --bg-color: #e9c46a;
-    --variant-color: #f4a261;
-    --primary-color: #264653;
-    --secondary-color: #2a9d8f;
-    --text-color: #0f1c22;
+:root {
+  --bg-color: #e9c46a;
+  --variant-color: #f4a261;
+  --primary-color: #264653;
+  --secondary-color: #2a9d8f;
+  --text-color: #0f1c22;
 }
 
-body{
-    background-color: var(--bg-color);
-    height: 100%;
-    margin: 0px;
+* {
+  box-sizing: border-box;
 }
 
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    "Helvetica Neue", Arial, sans-serif;
+  background-color: var(--bg-color);
+  height: 100%;
+  margin: 0px;
+}
+
+.text {
+  color: var(--text-color);
+}
+
+header {
+  height: 100px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+#headerContent {
+  margin: 10px;
+  background: rgba(255, 255, 255, 0.3); /* Light transparency */
+  backdrop-filter: blur(10px);
+  border-radius: 50px;
+  padding-right: 40px;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+img {
+  height: 80px;
+}
+
+#profile {
+  display: flex;
+  align-items: center;
+}
+
+#profileDetails {
+  display: flex;
+  flex-direction: column;
+}
+
+#profileName {
+  font-size: 1.8rem;
+}
+
+#profileDescription {
+  font-size: 0.8rem;
+  font-weight: bold;
+}
+
+#links {
+  display: flex;
+  gap: 10px;
+}
+
+#callToAction {
+  height: 50%;
+}
+button {
+  height: 100%;
+  border-radius: 10px;
+  background-color: var(--variant-color);
+  border: none;
+  cursor: pointer;
+  padding: 10px;
+}
+
+
+@media (max-width: 768px) {
+  header {
+    height: 70px;
+  }
+
+  #headerContent {
+    padding-right: 10px;
+  }
+  img {
+    height: 50px;
+  }
+
+  #profileName {
+    font-size: 1.1rem;
+  }
+  #profileDescription {
+    font-size: 0.6rem;
+  }
+  .linkText {
+    font-size: 0.69rem;
+  }
+}
