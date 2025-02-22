@@ -13,7 +13,7 @@
 body {
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
     "Helvetica Neue", Arial, sans-serif;
-  background-color: var(--bg-color);
+  background-color: rgb(242, 217, 191);
   height: 100%;
   margin: 0px;
 }
@@ -29,7 +29,7 @@ header {
   justify-content: center;
   background-image: linear-gradient(
       to top,
-      rgba(255, 249, 227, 1),
+      rgba(242, 217, 191, 1),
       rgba(255, 255, 255, 0)
     ),
     url("/static/images/BackgroundHeader.jpg");
