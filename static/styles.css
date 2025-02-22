@@ -1,0 +1,14 @@
+:root{
+    --bg-color: #e9c46a;
+    --variant-color: #f4a261;
+    --primary-color: #264653;
+    --secondary-color: #2a9d8f;
+    --text-color: #0f1c22;
+}
+
+body{
+    background-color: var(--bg-color);
+    height: 100%;
+    margin: 0px;
+}
+
