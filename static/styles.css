@@ -1,5 +1,5 @@
 :root {
-  --bg-color: #e9c46a;
+  --bg-color: rgb(255, 249, 227);
   --variant-color: #f4a261;
   --primary-color: #264653;
   --secondary-color: #2a9d8f;
@@ -27,12 +27,14 @@ header {
   width: 100%;
   display: flex;
   justify-content: center;
+  background-image: linear-gradient(to top, rgba(255, 249, 227, 1), rgba(255, 255, 255, 0)), url('/static/images/BackgroundHeader.jpg');
+  background-position-y: 1100px;
 }
 
 #headerContent {
   margin: 10px;
-  background: rgba(255, 255, 255, 0.3); /* Light transparency */
   backdrop-filter: blur(10px);
+  box-shadow: 0px 0px 5px 0;
   border-radius: 50px;
   padding-right: 40px;
   display: flex;
