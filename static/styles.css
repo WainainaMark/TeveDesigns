@@ -123,6 +123,7 @@ header {
   width: 80px;
   text-wrap-mode: nowrap;
   transform: translateY(-100px);
+  padding-right: 10px;
 }
 
 img {
@@ -198,8 +199,12 @@ button {
     transform: translateY(0);
     width: 80px
   }
+  99%{
+    width: 500px;
+    transform: translateY(0)
+  }
   100%{
-    width: 560px;
+    width: min-content;
     transform: translateY(0)
   }
 }
@@ -225,8 +230,12 @@ button {
       transform: translateY(0);
       width: 50px;
     }
-    100%{
+    99%{
       width: 560px;
+      transform: translateY(0)
+    }
+    100%{
+      width: min-content;
       transform: translateY(0)
     }
   }
