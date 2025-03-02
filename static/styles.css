@@ -9,6 +9,7 @@
 @font-face {
   font-family: HeaderFont;
   src:url('/static/HelveticaNeueBold.otf');
+  font-display: swap
 }
 
 
@@ -217,7 +218,6 @@ button {
   }
 
   #headerContent {
-    padding-right: 10px;
     width: 50px
   }
   @keyframes show{
