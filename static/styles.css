@@ -215,7 +215,7 @@ button {
   header {
     height: 70px;
     background-position-y: 1120px;
-    background-color: #c6a583;
+    background-color: none;
   }
 
   #headerContent {
