@@ -67,10 +67,9 @@ section{
   letter-spacing: 2px;
 }
 
-#mainshowcase{
-}
 
-#showcase,#showcase2{
+
+#showcase{
   position: absolute;
   color: white;
   background-color: #c6a583;
@@ -78,15 +77,6 @@ section{
   text-wrap-mode: nowrap;
   height: 40px;
   width: 230px;
-}
-
-#showcase{
-  right: 0;
-  animation: showcase 0.5s ease-in-out forwards;
-  animation-delay: 1s;
-}
-
-#showcase2{
   top: 0;
   animation: showcaseUp 0.5s ease-in-out forwards;
   animation-delay: 1.5s
