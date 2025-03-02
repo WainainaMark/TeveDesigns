@@ -1,6 +1,7 @@
 document.addEventListener('DOMContentLoaded', function() {
-    const element = document.querySelector(".box"); // Select the element
-    const yPosition = element.getBoundingClientRect().top;
+    const section = document.getElementById('section')
 
-    console.log(yPosition)
+    setTimeout(()=> {
+        section.style.opacity = "0"
+    }, 4000)
 })
