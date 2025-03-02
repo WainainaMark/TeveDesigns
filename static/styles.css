@@ -45,6 +45,8 @@ section{
   animation: showcaseAppearUp 0.5s ease-in-out forwards;
   animation-delay: 3.2s;
   height: 40px;
+  opacity: 0;
+  transition: all 0.3s ease-in;
 }
 #streak{
   position: absolute;
