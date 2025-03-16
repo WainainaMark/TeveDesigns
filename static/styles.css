@@ -5,9 +5,33 @@
 
 body{
   background-color: var(--body-color);
+  margin: 0;
+  height: 100%;
+}
+
+loader{
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  animation: fadeIn 1s ease-in-out forwards;
+}
+
+#logo{
+  height: 250px;
+  transform: translateY(10px)
 }
 
 header{
   background-color: var(--header-color);
   
+}
+
+@keyframes fadeIn{
+  100%{
+    opacity: 1;
+  }
 }
