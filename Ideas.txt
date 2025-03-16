@@ -1,3 +1,5 @@
 Bento Grid
 
 Text on the middle left, Photo on the middle right, cover full from top to bottom
+
+Top container contains data in visual sense, Bottom is labels and textual data about the product...
