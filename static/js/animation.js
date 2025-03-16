@@ -1,3 +1,6 @@
 $('document').ready(function(){
-    $('#logo').css('transform', 'translateY(0px)')
+    setTimeout(()=>{
+
+        $('#logo').css('transform', 'translateY(0px)')
+    }, 150)
 })

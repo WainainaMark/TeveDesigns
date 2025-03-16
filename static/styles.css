@@ -17,12 +17,13 @@ loader{
   align-items: center;
   justify-content: center;
   opacity: 0;
-  animation: fadeIn 1s ease-in-out forwards;
+  animation: fadeIn 1s ease-out forwards;
 }
 
 #logo{
   height: 250px;
-  transform: translateY(10px)
+  transform: translateY(50px);
+  transition: all 0.4s ease-in-out;
 }
 
 header{
