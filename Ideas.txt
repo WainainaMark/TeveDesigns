@@ -1,1 +1,3 @@
 Bento Grid
+
+Text on the middle left, Photo on the middle right, cover full from top to bottom
