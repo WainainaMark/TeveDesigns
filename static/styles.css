@@ -1,38 +1,139 @@
-:root{
+:root {
   --body-color: #e0fbfc;
   --header-color: #293241;
 }
 
-body{
+body {
   background-color: var(--body-color);
   margin: 0;
-  height: 100%;
+  height: 100vh;
 }
 
-loader{
+.text {
+  font-family: "Inter", sans-serif;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.showCase {
+  font-size: 2rem;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+loader {
   position: absolute;
   height: 100%;
   width: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
-  opacity: 0;
-  animation: fadeIn 1s ease-out forwards;
+  flex-direction: column;
+  display: none;
+  /* opacity: 0; */
+  /* animation: fadeIn 1s ease-out forwards; */
 }
 
-#logo{
+#logo {
   height: 250px;
   transform: translateY(50px);
-  transition: all 0.4s ease-in-out;
 }
 
-header{
-  background-color: var(--header-color);
-  
+#loading {
+  --height-of-loader: 4px;
+  --loader-color: #0071e2;
+  width: 130px;
+  height: var(--height-of-loader);
+  border-radius: 30px;
+  background-color: rgba(0, 0, 0, 0.2);
+  position: relative;
+  margin-top: 10px;
+  display: none;
 }
 
-@keyframes fadeIn{
-  100%{
+#loading::before {
+  content: "";
+  position: absolute;
+  background: var(--loader-color);
+  top: 0;
+  left: 0;
+  width: 0%;
+  height: 100%;
+  border-radius: 30px;
+  animation: moving 1s ease-in-out infinite;
+}
+
+main {
+  height: 100%;
+  width: 100%;
+  padding: 20px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+#left,
+#right {
+  display: grid;
+  grid-auto-rows: 1fr 1fr;
+}
+
+#center {
+  display: grid;
+  grid-auto-rows: 100px 1fr 1fr;
+}
+
+.box {
+  margin: 10px;
+  border: 1px solid grey;
+  border-radius: 10px;
+}
+
+#mobile{
+  display: none
+}
+
+#mobileNav {
+  display: none;
+}
+
+@keyframes moving {
+  50% {
+    width: 100%;
+  }
+
+  100% {
+    width: 0;
+    right: 0;
+    left: unset;
+  }
+}
+
+@keyframes fadeIn {
+  100% {
     opacity: 1;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  main {
+    display: none;
+  }
+
+  #mobile{
+    display: flex;
+  }
+  #mobileNav {
+    display: block;
+    display: block;
+    position: absolute;
+    bottom: 10px;
+    width: 75%;
+    padding: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    border: 1px solid grey;
+    border-radius: 50px;
   }
 }
