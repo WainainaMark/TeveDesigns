@@ -1,5 +1,5 @@
 :root {
-  --body-color: #e0fbfc;
+  --body-color: #fdf0d5;
   --header-color: #293241;
 }
 
@@ -69,7 +69,7 @@ main {
   height: 100%;
   width: 100%;
   padding: 20px;
-  display: grid;
+  display: none;
   grid-template-columns: 1fr 1fr 1fr;
 }
 
@@ -88,7 +88,22 @@ main {
   margin: 10px;
   border: 1px solid grey;
   border-radius: 10px;
+  position: relative;
+  top: 10px;
+  background-color: var(--header-color);
 }
+.box:hover{
+  filter: grayscale(0)!important;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.4);
+}
+
+#contact{
+  background-image: url(/static/images/Contact.jpeg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  filter: grayscale(1);
+}
+
 
 #mobile{
   display: none
@@ -122,18 +137,39 @@ main {
   }
 
   #mobile{
-    display: flex;
+    display: grid;
+    grid-template-rows: 1fr 2fr;
+    grid-template-columns: 1fr;
+    padding: 0;
   }
-  #mobileNav {
-    display: block;
-    display: block;
-    position: absolute;
-    bottom: 10px;
-    width: 75%;
-    padding: 10px;
-    left: 50%;
-    transform: translateX(-50%);
+  #mobileHeader{
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
     border: 1px solid grey;
-    border-radius: 50px;
+    background-color: var(--header-color);
+
   }
+
+  #chooseContainer{
+    margin-top: 20px
+  }
+
+  #choices{
+    display: flex;
+    justify-content: space-around;
+  }
+
+  .choice{
+    padding: 5px;
+    background-color: grey;
+    border-radius: 30px;
+    padding-left: 10px;
+    padding-right: 10px;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    border: 2px solid #353535;
+  }
+
+
 }

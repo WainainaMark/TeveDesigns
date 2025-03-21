@@ -1,6 +1,6 @@
 $("document").ready(function () {
-  designs = ["Graphic", "Motion", "App", "UI/UX"];
   $("#loader").fadeIn();
+  $('.box').css('transition', 'all 0.5s ease')
   $("#loader").css("display", "flex");
   $("#loading").css("display", "block");
   setTimeout(() => {
@@ -11,8 +11,14 @@ $("document").ready(function () {
     $("#loading").fadeIn();
   }, 800);
   setTimeout(() => {
-    $("#loader").fadeOut();
+    $("#loader").fadeOut(function(){
+      $('#desktop').fadeIn()
+      $('#desktop').css('display', 'grid')
+      $('.box').css('top', '0px')
+    });
   }, 3000);
+
+
 
   
 });

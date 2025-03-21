@@ -19,10 +19,10 @@
 
   </header>
 
-  <main>
+  <main class="main" id="desktop">
     <div id="left">
       <div class="box"></div>
-      <div class="box">Contact</div>
+      <div class="box" id="contact"></div>
     </div>
     <div id="center">
       <div class="box">Header</div>
@@ -35,9 +35,21 @@
     </div>
   </main>
 
-  <main id="mobile">Mobile Template</main>
-  
-  <div id="mobileNav">Mobile</div>
+  <main id="mobile" class="main">
+    <div id="mobileHeader"></div>
+    <div id="chooseContainer">
+      <div id="choices">
+        <div class="choice"> About Me </div>
+        <div class="choice"> Projects </div>
+        <div class="choice"> Contact </div>
+      </div>
+      <div id="choicesContent">
+        <div class="chosen">About </div>
+        <div class="chosen"> Projects </div>
+        <div class="chosen"> Contact </div>
+      </div>
+    </div>
+  </main>
 
   <script src="/static/index.js"></script>
   <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
