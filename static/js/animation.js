@@ -14,13 +14,7 @@ $(document).ready(function(){
     })
     $(".showCaseText").fadeOut()
   }, 4000)
-  setTimeout(()=>{
-
-    $(".progressBar").css({
-      "position": "sticky",
-      "top": 0
-    })
-  }, 4500)
+  
   // $(".trueProgress").css("width", "100%")
 
 
