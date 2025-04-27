@@ -80,7 +80,7 @@ document.addEventListener("DOMContentLoaded", function () {
     window.addEventListener("scroll", ()=>{
       const currentScroll = window.scrollY;
       const containerRect = container.getBoundingClientRect();
-      if(containerRect.bottom == 70){
+      if(containerRect.bottom == 80){
         elementParent.classList.add('leftStick')
       }
     })
