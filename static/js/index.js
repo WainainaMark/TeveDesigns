@@ -74,18 +74,26 @@ document.addEventListener("DOMContentLoaded", function () {
   //   lastScrollY = currentScrollY;
   // });
 
-  window.addEventListener("scroll", ()=>{
-    const currentScroll = window.scrollY;
-    const containerRect = container.getBoundingClientRect();
-    if(containerRect.bottom == 70){
-      elementParent.classList.add('leftStick')
-    }
-  })
   elementChild.addEventListener('animationend', () => {
-    console.log("🎉 Animation done!");
     elementChild.style.backgroundColor = "black";
     element.style.height = "30px"
+    window.addEventListener("scroll", ()=>{
+      const currentScroll = window.scrollY;
+      const containerRect = container.getBoundingClientRect();
+      if(containerRect.bottom == 70){
+        elementParent.classList.add('leftStick')
+      }
+    })
   });
+
+  const links = document.querySelectorAll('.links');
+
+  links.forEach(link => {
+    link.addEventListener('click', () => {
+      links.forEach(l => l.classList.remove('linked')); // remove 'linked' from all
+      link.classList.add('linked'); // add 'linked' to the one that got clicked
+    });
+  })
 });
 
 window.onbeforeunload = function () {
