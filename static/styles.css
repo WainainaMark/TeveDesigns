@@ -125,6 +125,12 @@ section {
     font-size: 4rem;
   }
 
+  .progressBar{
+    position: sticky;
+    bottom: 15px;
+    align-self: end;
+  }
+
   .bgProgress {
     width: 200px;
   }
