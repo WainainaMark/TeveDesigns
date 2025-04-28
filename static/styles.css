@@ -68,6 +68,7 @@ section {
   transform: translateY(50px);
   opacity: 0;
   display: none;
+  position: absolute;
 }
 
 .progressBar {
