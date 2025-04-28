@@ -125,6 +125,10 @@ section {
     font-size: 4rem;
   }
 
+  section{
+    height: calc(200vh - 40px);
+  }
+
   .progressBar{
     position: sticky;
     bottom: 15px;
